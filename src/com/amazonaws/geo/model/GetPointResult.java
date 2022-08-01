@@ -15,16 +15,16 @@
 
 package com.amazonaws.geo.model;
 
-import com.amazonaws.services.dynamodbv2.model.GetItemResult;
+import software.amazon.awssdk.services.dynamodb.model.GetItemResponse;
 
 public class GetPointResult extends GeoDataResult {
-	private GetItemResult getItemResult;
+	private GetItemResponse getItemResult;
 
-	public GetPointResult(GetItemResult getItemResult) {
+	public GetPointResult(GetItemResponse getItemResult) {
 		this.getItemResult = getItemResult;
 	}
 
-	public GetItemResult getGetItemResult() {
+	public GetItemResponse getGetItemResult() {
 		return getItemResult;
 	}
 }
